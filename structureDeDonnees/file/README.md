@@ -1,5 +1,6 @@
 # LES FILES
 
+
 ## Principe
 
 * Les files permettent de structuré les information par ordre d'arivée. 
@@ -23,9 +24,15 @@ f.tete 		f.queue
 ### Méthode 2
 
 ```
++---+
+| f |
++---+
+  |
+  ˇ 
 +--+--+  +--+--+  +--+--+ 
 |x | -|->|y | -|->|z | -|---+
 +--+--+  +--+--+  +--+--+   |
    ^			    |
-   |------------------------+
+   |			    |
+   +------------------------+
 ```
