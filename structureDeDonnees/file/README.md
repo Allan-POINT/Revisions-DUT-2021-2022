@@ -1,7 +1,7 @@
 # LES FILES
 
 
-## Principe
+## Principe
 
 * Les files permettent de structuré les information par ordre d'arivée. 
 * Elles sont chaîées.
