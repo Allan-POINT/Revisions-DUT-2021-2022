@@ -61,3 +61,10 @@ int longueurFile(File f)
 	return l;
 
 }
+
+Bool videFile(File f)
+{
+	if(f == NULL)
+		return TRUE;
+	return FALSE;
+}

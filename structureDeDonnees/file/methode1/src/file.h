@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "bool.h"
 
 typedef struct maillonFile
 {
@@ -10,11 +11,12 @@ typedef struct maillonFile
 	int v;
 }MaillonFile;
 
-typedef struct MaillonFile *File;
+typedef MaillonFile *File;
 
 File filenouv(void);
 File adjq(File f, int x);
 File suppressionEnTete(File f);
 int longueurFile(File f);
+Bool videFile(File f);
 
 #endif
