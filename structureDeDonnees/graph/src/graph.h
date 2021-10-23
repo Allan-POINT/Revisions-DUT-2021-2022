@@ -25,7 +25,10 @@ Bool existSommet(Graph g, int x);
 Graph suppressionSommet(Graph g, int x);
 Graph suppressionArc(Graph g, int a, int b);
 
+List ensembleSuccesseurs(Graph g, int x);
+
 void afficherGraph(Graph g);
 
+List parcoursEnProfondeur(Graph g, List e, List l);
 
 #endif

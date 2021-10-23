@@ -139,3 +139,28 @@ void afficherGraph(Graph g)
 	fclose(flot);
 	system("dotty graph.txt");
 }
+
+List ensembleSuccesseurs(Graph g, int x)
+{
+	if(!existSommet(g, x))
+		return listNouv();
+	while(g->v != x)
+	{
+		g = g->suiv;
+	}
+	return g->successeurs;
+}
+
+List parcoursEnProfondeur(Graph g, List e, List l)
+{
+	int z;
+	List l1;
+	if(listVide(e))
+		return l;
+	z = teteList(e);
+	if(estDansLaListe(l, z))
+		l1 = l;
+	else
+		l1 = parcoursEnProfondeur(g, ensembleSuccesseurs(g, z), ajouterList(l, z));
+	return parcoursEnProfondeur(g, suppressionList(e, z), l1);
+}
