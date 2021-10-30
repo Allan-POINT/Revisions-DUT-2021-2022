@@ -148,7 +148,7 @@ List ensembleSuccesseurs(Graph g, int x)
 	{
 		g = g->suiv;
 	}
-	return g->successeurs;
+	return copierListe(g->successeurs);
 }
 
 List parcoursEnProfondeur(Graph g, List e, List l)

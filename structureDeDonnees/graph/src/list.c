@@ -152,3 +152,15 @@ Bool estDansLaListe(List l, int x)
 	}
 	return FALSE;
 }
+
+List copierListe(List l)
+{
+	List cpy = listNouv();
+
+	while(!listVide(l))
+	{
+		cpy = ajouterList(cpy, l->value);
+		l = l->next;
+	}
+	return cpy;
+}

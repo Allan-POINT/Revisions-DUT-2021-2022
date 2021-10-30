@@ -24,5 +24,6 @@ int longueurList(List l);
 void afficherList(List l);
 Bool listVide(List l);
 Bool estDansLaListe(List l, int x);
+List copierListe(List l);
 
 #endif
